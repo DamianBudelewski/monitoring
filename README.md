@@ -7,6 +7,7 @@ System monitoring done with ELK stack and Prometheus/Grafana. All created as sin
 ### Setting up
 Before starting up add `"127.0.0.1" monitoring.com"` to /etc/hosts, also
 make sure that `grafana/grafana.db` has `472:472` ownership.
+Grafana UI credentials `admin:yuiopoiuy`
 After it, run `docker-compose up -d`
 It may take some time, because of healthcheck of kibana service. Kibana has to start before filebeat and metricbeat to make it possible for them to load dashboards.
 Check running services with `docker-compose ps`, and logs with `docker-compose logs <service name>`
