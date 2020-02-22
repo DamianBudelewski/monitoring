@@ -1,0 +1,14 @@
+metricbeat.modules:
+- module: nginx
+  metricsets: ["stubstatus"]
+  enabled: true
+  period: 10s
+  hosts: ["nginx:10080"]
+  server_status_path: "nginx-status"
+
+
+output.elasticsearch:
+  hosts: elasticsearch:9200
+
+  #setup.dashboards.enabled: true
+setup.kibana.host: "http://kibana:5601"
