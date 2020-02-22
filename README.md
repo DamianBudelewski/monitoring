@@ -2,6 +2,7 @@
 System monitoring done with ELK stack and Prometheus/Grafana. All created as single docker-compose file with dependencies.
 
 ### System overview
+![System overview](Monitoring.png)
 
 ### Setting up
 Before starting up add `"127.0.0.1" monitoring.com"` to /etc/hosts, also
